@@ -22,11 +22,12 @@ function App() {
   const resFailed = (res) => {
     console.log("Failed:", res);
   };
+  // old client ID :"703838845315-pupcra229gno6qnotq37tlj3vvq5l26l.apps.googleusercontent.com",
   useEffect(()=>{
     gapi.load("client:auth2", () => {
       gapi.client.init({
         clientId:
-          "703838845315-pupcra229gno6qnotq37tlj3vvq5l26l.apps.googleusercontent.com",
+          "60537513293-qhv2m7nqalh8kd1jlur15iua76lajik4.apps.googleusercontent.com",
         plugin_name: "faucets-app",
       });
     });
@@ -63,7 +64,7 @@ function App() {
             </form>
             <div className="auth_footer">
               <GoogleLogin
-                clientId="703838845315-pupcra229gno6qnotq37tlj3vvq5l26l.apps.googleusercontent.com"
+                clientId="60537513293-qhv2m7nqalh8kd1jlur15iua76lajik4.apps.googleusercontent.com"
                 buttonText="Sign in with google"
                 onSuccess={responseGoogle}
                 onFailure={resFailed}
